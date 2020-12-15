@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".LoginActivity2">
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/back"
+        android:layout_marginLeft="7dp"
+              android:id="@+id/backBtn"
+        android:textSize="25dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:textSize="17sp"
+        android:text="Enter your login details to"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/assess"
+        android:textSize="17sp"
+        android:layout_marginTop="65dp"
+        android:layout_centerHorizontal="true"
+        android:text="access your account"/>
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="65dp"
+        android:id="@+id/email"
+        android:hint="Your email "
+        android:layout_below="@+id/assess"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/textview"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="13dp"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="65dp"
+        android:id="@+id/password"
+        android:hint="Your password"
+        android:paddingLeft="13dp"
+        android:layout_below="@+id/email"
+        android:background="@drawable/textview2"
+        android:inputType="textPassword"
+        android:layout_marginTop="1dp"
+        android:layout_centerHorizontal="true"/>
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Forgot"
+       android:id="@+id/ForgotPassword"
+       android:layout_below="@+id/email"
+       android:layout_marginTop="23dp"
+       android:textSize="17dp"
+       android:layout_marginLeft="320dp"
+       android:textColor="@color/purple_500"/>
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="65dp"
+        android:id="@+id/sign_btn"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/btn"
+        android:layout_centerHorizontal="true"
+        android:text="Sign in"
+        android:textAllCaps="false"
+        android:textSize="17sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:text="Don't hane an account? SIGNUP"
+        android:id="@+id/signup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:layout_below="@+id/sign_btn"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign in via:"
+        android:id="@+id/signin_via"
+        android:textSize="17sp"
+        android:layout_below="@+id/sign_btn"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"/>
+   <TextView
+       android:layout_width="150dp"
+       android:layout_height="55dp"
+       android:layout_marginTop="25dp"
+       android:background="@drawable/facebook"
+       android:layout_below="@+id/signin_via"
+       android:text="facebook"
+       android:id="@+id/facebook"
+       android:layout_marginLeft="55dp"
+       android:gravity="center"
+       android:textSize="17sp"
+       android:textColor="@color/white"
+       />
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="210dp"
+        android:background="@drawable/google"
+        android:layout_below="@+id/signin_via"
+        android:text="Google"
+        android:gravity="center"
+        android:id="@+id/google"
+        android:textSize="17sp"
+        android:textColor="@color/white"/>
+
+
+
+
+</RelativeLayout>
